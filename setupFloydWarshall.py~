@@ -1,0 +1,7 @@
+from distutils.core import setup
+from Cython.Build import cythonize
+
+setup(
+  name = 'Floyd-Warshall Algorithm',
+  ext_modules = cythonize("FloydWarshall.pyx"),
+)
